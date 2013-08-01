@@ -32,7 +32,7 @@ prose:
         field:
           element: "text"
           label: "Date"
-          value: CURRENT_DATETIME
+          value: 'CURRENT_DATETIME'
       - name: "splash"
         field:
           element: "text"
@@ -62,4 +62,4 @@ prose:
         field:
           element: "text"
           label: "Date"
-          value: CURRENT_DATETIME
+          value: 'CURRENT_DATETIME'
