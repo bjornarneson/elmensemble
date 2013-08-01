@@ -1,4 +1,6 @@
-h1.title {
+h1.title a {
   text-indent: -999em;
-  background: transparent url('/img/elm-logo.png') 0 0;
+  background: transparent url('/img/elm-logo.png') no-repeat 0 0;
+  height: 100px;
+  width: 200px;
 }
