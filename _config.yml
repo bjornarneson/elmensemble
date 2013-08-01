@@ -3,8 +3,8 @@ permalink: none
 markdown: rdiscount
 prose:
   rooturl: '_posts'
-  siteurl: 'http://www.elmensemble.org'
-  relativeLinks: 'http://www.elmensemble.org/links.jsonp'
+  siteurl: 'http://elmensemble.org'
+  relativeLinks: 'http://elmensemble.org/links.jsonp'
   media: 'media'
   metadata:
     _posts:
@@ -21,21 +21,21 @@ prose:
           element: "text"
           label: "Title"
           value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
       - name: "splash"
         field:
           element: "text"
           label: "Splash image"
           value: ""
-      - name: "tags"
+      - name: "sticky"
         field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
+          element: "checkbox"
+          label: "Sticky at top"
+          value: "false"
     _posts/static:
       - name: "layout"
         field:
