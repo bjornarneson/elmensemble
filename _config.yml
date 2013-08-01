@@ -1,5 +1,5 @@
 baseurl: http://elmensemble.org
-permalink: pretty
+permalink: none
 markdown: rdiscount
 prose:
   rooturl: '_posts'
