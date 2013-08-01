@@ -1,7 +1,7 @@
 title: ELM Ensemble - Sally and Josh Messner, directors
 
 baseurl: http://elmensemble.org
-permalink: /:categories/:title/index.html
+permalink: pretty
 markdown: rdiscount
 prose:
   rooturl: '_posts'
