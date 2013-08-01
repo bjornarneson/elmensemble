@@ -19,9 +19,10 @@ repertoire in liturgical settings. Josh and Sally Messner, directors.<h6>
       <h4 class='month'>{{item.date | date: '%B %Y'}}</h4>
     {% endif %}
 -->
-<h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
+<h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a>
+    <span class='date'>Posted {{item.date | date:"%b %d %Y"}}</span></h2>
 
-<span class='date'>Posted {{item.date | date:"%b %d %Y"}}</span>
+
 
 {{item.content}}
 
