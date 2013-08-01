@@ -3,8 +3,8 @@ permalink: none
 markdown: rdiscount
 prose:
   rooturl: '_posts'
-  siteurl: 'http://elmensemble.org'
-  relativeLinks: 'http://elmensemble.org/links.jsonp'
+  siteurl: 'http://www.elmensemble.org'
+  relativeLinks: 'http://www.elmensemble.org/links.jsonp'
   media: 'media'
   metadata:
     _posts:
