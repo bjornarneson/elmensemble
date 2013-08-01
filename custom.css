@@ -5,3 +5,8 @@ h1.title a {
   height: 100px;
   width: 200px;
 }
+
+div.tagline h4 {
+  font-style: italic;
+  
+}
