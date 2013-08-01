@@ -4,7 +4,7 @@ title: 'ELM Ensemble'
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ELM Ensemble {% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
+  <title>{{site.title}} {% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link rel='alternate' type='application/rss+xml' title='RSS' href='http://elmensemble.org/blog.rss' />
@@ -20,7 +20,7 @@ title: 'ELM Ensemble'
 <!--            <a class='{% if page.section == "blog" %}active{% endif %}' href='{{site.baseurl}}/'>Blog</a> -->
             <a class='{% if page.url == "contact/" %}active{% endif %}' href='{{site.baseurl}}/contact'>Contact</a>
           </div>
-          <h1 class='title'><a href='{{site.baseurl}}/'>{{page.title}}</a></h1>
+          <h1 class='title'><a href='{{site.baseurl}}/'>{{site.title}}</a></h1>
         </div>
       </div>
     </div>
