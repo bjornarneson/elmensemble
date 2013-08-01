@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: http://elmensemble.org
 permalink: pretty
 markdown: rdiscount
 prose:
