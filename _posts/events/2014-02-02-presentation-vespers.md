@@ -1,4 +1,5 @@
 ---
+layout: events
 category: events
 title: "Presentation Vespers"
 slug: presentation-vespers
