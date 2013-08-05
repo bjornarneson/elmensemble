@@ -6,14 +6,14 @@ layout: default
 
 <h2>Upcoming events</h2>
 {% for item in site.categories.events reversed %}
-	<p><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
-	<span class='date'>{{item.date | date:"%I:%M %p, %A, %B %d, %Y"}} @ {{item.location_name}}</span></p>
+	<p><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
+	{{item.date | date:"%I:%M %p, %A, %B %d, %Y"}} at {{item.location_name}}</p>
 {% endfor %}
 
 <h2>Latest blog entries</h2>    
-{% for item in site.categories.blog limit:1 %}
-	<p><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
-	<span class='date'>Posted {{item.date | date:"%b %d %Y"}}</span></p>
+{% for item in site.categories.blog limit:5 %}
+	<p><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
+	Posted {{item.date | date:"%b %d %Y"}}</p>
 {% endfor %}
 </div>
 
