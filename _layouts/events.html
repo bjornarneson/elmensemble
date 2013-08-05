@@ -17,12 +17,19 @@ section: events
 
 <div class='listing col6 pad4h margin3'>
   <div class='heading'>
-    <h1>{{page.title}}</h1><span class='date'>{{page.date | date:"%b %d"}}</span>
+    <h1>{{page.title}}</h1>
   </div>
 
+	{{page.date | date_to_long_string }}
+	{{page.location_name}}
+	{{page.location_address}}
+	{{page.location_url}}
+  
   <div class='prose'>
     {{content}}
   </div>
 </div>
 
 {% include rss-link.html %}
+
+

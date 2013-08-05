@@ -6,7 +6,7 @@ layout: default
 
 {% for item in site.categories.events reversed %}
 	<h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
-	<span class='date'>{{item.date | date:"%b %d %Y"}}</span>
+	<p>{{item.date | date:"%b %d %Y"}} @ {{item.location_name}}{{item.location_url}}</p>
 	{{item.content}}
 {% endfor %}
 
