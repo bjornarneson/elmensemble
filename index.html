@@ -4,20 +4,17 @@ layout: default
 
 <div class='listing col6 pad4h margin3'>
 
+<h2>Upcoming events</h2>
 {% for item in site.categories.events reversed %}
-	<h2>Upcoming event</h2>
-	<h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
-	<span class='date'>{{item.date | date:"%I:%M %p, %A, %B %d, %Y"}} @ {{item.location_name}}</span>
+	<p><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
+	<span class='date'>{{item.date | date:"%I:%M %p, %A, %B %d, %Y"}} @ {{item.location_name}}</span></p>
 {% endfor %}
 
+<h2>Latest blog entries</h2>    
 {% for item in site.categories.blog limit:1 %}
-	<h2>Latest blog entry</h2>    
-	<h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h3>
-	{{item.content}}
-	<span class='date'>Posted {{item.date | date:"%b %d %Y"}}</span>
+	<p><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
+	<span class='date'>Posted {{item.date | date:"%b %d %Y"}}</span></p>
 {% endfor %}
-
-  
 </div>
 
 {% include rss-link.html %}
