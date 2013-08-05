@@ -7,7 +7,7 @@ layout: default
 {% for item in site.categories.events reversed limit:1 %}
 	<h2>Upcoming event</h2>    
 	<h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
-	<span class='date'>{{item.date | date:"%I:%M, %A, %B %d, %Y"}}</span>
+	<span class='date'>{{item.date | date:"%I:%M %p, %A, %B %d, %Y"}}</span>
 	{{item.content}}
 {% endfor %}
 
