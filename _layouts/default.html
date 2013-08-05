@@ -18,10 +18,12 @@ title: 'ELM Ensemble'
       <div class='header col6 margin3 pad4h'>
         <div class='clearfix col12'>
           <div class='menu fr'>
-            <a class='{% if page.section == "events" %}active{% endif %}' href='{{site.baseurl}}/events'>Events</a> 
-            <a class='{% if page.section == "blog" %}active{% endif %}' href='{{site.baseurl}}/blog'>Blog</a> 
-            <a class='{% if page.url == "contact/" %}active{% endif %}' href='{{site.baseurl}}/contact'>Contact</a>
-          </div>
+		  <ul>
+            <li><a class='{% if page.section == "events" %}active{% endif %}' href='{{site.baseurl}}/events'>Events</a></li>
+            <li><a class='{% if page.section == "blog" %}active{% endif %}' href='{{site.baseurl}}/blog'>Blog</a></li>
+            <li><a class='{% if page.url == "contact/" %}active{% endif %}' href='{{site.baseurl}}/contact'>Contact</a></li>
+          </ul>
+		  </div>
           <div class='logo col4'><h1 class='title'><a href='{{site.baseurl}}/'>{{site.title}}</a></h1></div>
           <div class='tagline col6 pad1'>
           <h4>The Elm Ensemble performs the music of early Lutheranism and other early 
