@@ -4,7 +4,7 @@ prose:
   relativeLinks: 'http://www.elmensemble.org/links.jsonp'
   media: 'images'
   metadata:
-    _posts:
+    _posts/blog:
       - name: "category"
         field:
           element: "hidden"
@@ -33,6 +33,46 @@ prose:
           element: "checkbox"
           label: "Sticky at top"
           value: "false"
+    _posts/events:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "events"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "events"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "date"
+        field:
+          element: "text"
+          value: "2099-07-30 18:30"
+      - name: "location_name"
+        field:
+          element: "text"
+          value: "Christ Church Lutheran"
+      - name: "location_address"
+        field:
+          element: "text"
+          value: "3244 34th Ave S, Minneapolis, MN 55406"
+      - name: "location_url"
+        field:
+          element: "text"
+          value: "http://www.christchurchluth.org/map.html"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
     _posts/static:
       - name: "layout"
         field:

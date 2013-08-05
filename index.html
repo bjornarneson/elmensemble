@@ -1,28 +1,24 @@
 ---
 layout: default
-section: blog
 ---
 
 <div class='listing col6 pad4h margin3'>
 
-{% for item in site.categories.blog limit:1000 %}
-    
-    <!--
-    {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
-    {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
--->
-<!--
-{% if date != ndate %}
-      <h4 class='month'>{{item.date | date: '%B %Y'}}</h4>
-    {% endif %}
--->
-<h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
-
-{{item.content}}
-
-<span class='date'>Posted {{item.date | date:"%b %d %Y"}}</span>
-
+{% for item in site.categories.events limit:1 %}
+	<h2>Upcoming event</h2>    
+	<h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
+	<span class='date'>{{item.date | date:"%b %d %Y"}}</span>
+	{{item.content}}
 {% endfor %}
+
+
+{% for item in site.categories.blog limit:1 %}
+	<h2>Latest blog entry</h2>    
+	<h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h3>
+	{{item.content}}
+	<span class='date'>Posted {{item.date | date:"%b %d %Y"}}</span>
+{% endfor %}
+
   
 </div>
 
