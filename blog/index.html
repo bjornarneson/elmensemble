@@ -6,7 +6,7 @@ layout: default
 
 {% for item in site.categories.blog limit:999 %}
 	<h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h3>
-	{{item.content | truncatewords: 50 }} <a class='item' href='{{site.baseurl}}{{item.url}}'>Read more</a>
+	{{item.content | truncatewords: 50 }} <a class='item' href='{{site.baseurl}}{{item.url}}'>read more</a>
 	<span class='date'>Posted {{item.date | date:"%b %d %Y"}}</span>
 {% endfor %}
  
