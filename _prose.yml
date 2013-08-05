@@ -50,24 +50,23 @@ prose:
       - name: "date"
         field:
           element: "text"
+		  label: "Date (yyyy-mm-dd hh:mm)"
           value: "2099-07-30 18:30"
       - name: "location_name"
         field:
           element: "text"
+		  label: "Location Name"
           value: "Christ Church Lutheran"
       - name: "location_address"
         field:
           element: "text"
+		  label: "Location address"
           value: "3244 34th Ave S, Minneapolis, MN 55406"
       - name: "location_url"
         field:
           element: "text"
+		  label: "Location URL"
           value: "http://www.christchurchluth.org/map.html"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
       - name: "splash"
         field:
           element: "text"
