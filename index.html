@@ -7,14 +7,16 @@ layout: default
 <h2>Upcoming Events</h2>
 {% for item in site.categories.events reversed %}
 	<p><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
-	{{item.date | date:"%-I:%M %p, %A, %B %d, %Y"}} at {{item.location_name}}</p>
+	{{item.date | date:"%-I:%M %p, %A, %B %-d, %Y"}} at {{item.location_name}}</p>
 {% endfor %}
 
+{% if site.categories.blog != null %}
 <h2>Latest Blog Entries</h2>    
 {% for item in site.categories.blog limit:5 %}
 	<p><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
-	Posted {{item.date | date:"%b %d %Y"}}</p>
+	Posted {{item.date | date:"%b %-d %Y"}}</p>
 {% endfor %}
+{% endif %}
 </div>
 
 {% include rss-link.html %}
