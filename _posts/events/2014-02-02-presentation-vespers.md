@@ -8,4 +8,4 @@ location_url: http://www.christchurchluth.org/map.html
 date: '2014-02-02 16:30'
 ---
 
-The Christ Church Choir with friends from the Elm Ensemble perform J.S. Bach’s **Cantata 161** under the direction of Paul Boehnke, Bach Society of Minnesota. Freewill offering.
+The Christ Church Choir with friends from the Elm Ensemble perform J. S. Bach’s **Cantata 161** under the direction of Paul Boehnke, Bach Society of Minnesota. Freewill offering.
