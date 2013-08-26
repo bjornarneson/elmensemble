@@ -19,3 +19,8 @@ div.tagline h4 {
 div.event h5 {
   font-weight: bold;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
