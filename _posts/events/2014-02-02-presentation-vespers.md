@@ -8,9 +8,6 @@ location_url: http://www.christchurchluth.org/map.html
 date: '2014-02-02 16:30'
 ---
 
-The Christ Church Lutheran Choir is joined by members of the Elm Ensemble and a chamber orchestra of the finest early-music players in the region to perform Bach’s **Cantata 161, Komm, du süße Todesstunde**. 
-
-- Nicole Warner, alto
-- Craig Lemming, tenor
+The Christ Church Lutheran Choir is joined by members of the Elm Ensemble and a chamber orchestra of the finest early-music players in the region to perform Bach’s **Cantata 161, Komm, du süße Todesstunde**. Soloists are Nicole Warner, alto, and Craig Lemming, tenor.
 
 Paul Boehnke, artistic director of the Bach Society of Minnesota, conducts this lovely cantata that is often used for the festival of the Presentation of Our Lord. No admission charge--a freewill offering for a local community nonprofit will be received during the service. 
