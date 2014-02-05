@@ -1,7 +1,7 @@
 ---
 layout: events
 category: events
-published: false
+published: true
 title: "A Cuban Requiem"
 date: "2014-04-13 15:00"
 location_name: "St John in the Wilderness"
