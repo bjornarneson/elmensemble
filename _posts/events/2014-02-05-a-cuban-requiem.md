@@ -5,7 +5,7 @@ published: false
 title: A Cuban Requiem
 date: "2014-04-13 15:00"
 location_name: St John in the Wilderness
-location_address: "2175 First Ave., White Bear Lake, MN, 55110"
+location_address: "2175 First Ave, White Bear Lake, MN, 55110"
 location_url: ""
 permalink: "cuban-requiem"
 ---
