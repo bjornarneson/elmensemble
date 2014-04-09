@@ -11,3 +11,5 @@ permalink: "cuban-requiem"
 ---
 
 Begin your journey through Holy Week with this powerful program of music from Latin America, including the US premiere of the exquisite **Requiem Mass by Cuban composer Esteban Salas** (1729-1803) and moving lamentations from Guatemalan manuscripts.
+
+[Buy tickets now](http://stjohnwilderness.org/watermusic/wm-concert4.html)
