@@ -3,10 +3,11 @@ layout: default
 ---
 
 <div class='container'>
+<!--
 <div class='listing col6 pad4h'>
 
 <h2>Upcoming Events</h2>
-{% for item in site.categories.events reversed %}
+{% for item in site.events reversed %}
 	<p><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a><br />
 	{{item.date | date:"%-I:%M %p, %A, %B %-d, %Y"}} at {{item.location_name}}</p>
 {% endfor %}
@@ -18,11 +19,18 @@ layout: default
 	Posted {{item.date | date:"%b %-d %Y"}}</p>
 {% endfor %}
 {% endif %}
+
+
 </div>
 
 <div class='col6 pad4h'>
 <img src="/images/Elm08.jpg" />
 </div>
+-->
+<div class='col12'>
+<img src="/images/Elm08.jpg" />
+</div>
+
 
 </div>
 {% include rss-link.html %}
