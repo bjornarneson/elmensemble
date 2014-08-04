@@ -1,5 +1,7 @@
 ---
-layout: default
+title: Upcoming Events
+layout: page
+published: true
 permalink: /events
 ---
 
