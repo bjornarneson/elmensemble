@@ -5,7 +5,7 @@ published: true
 permalink: /about
 ---
 
-### The Elm Ensemble (since 2008)
+### The Elm Ensemble (established 2008)
 
 - Sally Messner, soprano and director
 - Josh Messner, countertenor and director
