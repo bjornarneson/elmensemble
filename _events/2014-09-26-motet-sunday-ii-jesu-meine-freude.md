@@ -1,7 +1,7 @@
 ---
 layout: events
 category: events
-published: true
+published: false
 title: "Motet Sunday II - Jesu Meine Freude"
 date: "2015-04-06 09:30"
 location_name: Christ Church Lutheran
