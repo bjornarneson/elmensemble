@@ -1,39 +1,9 @@
 prose:
   media: 'images'
-  rooturl: '_posts'
   siteurl: 'http://elmensemble.org'
   relativeLinks: 'http://elmensemble.org/links.jsonp'
   metadata:
-    _posts/blog:
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "blog"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "blog"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
-      - name: "splash"
-        field:
-          element: "text"
-          label: "Splash image"
-          value: ""
-      - name: "sticky"
-        field:
-          element: "checkbox"
-          label: "Sticky at top"
-          value: "false"
-    _posts/events:
+    _events:
       - name: "category"
         field:
           element: "hidden"
@@ -77,7 +47,7 @@ prose:
           element: "text"
           label: "Splash image"
           value: ""
-    _posts/static:
+    _pages:
       - name: "layout"
         field:
           element: "hidden"
