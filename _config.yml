@@ -6,3 +6,5 @@ markdown: rdiscount
 collections:
   events:
     output: true
+  pages:
+	output: true
