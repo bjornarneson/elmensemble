@@ -28,8 +28,7 @@ published: true
   {% capture eventday %}{{item.date | date: '%s'}}{% endcapture %}
   <ul>
   {% if eventday < today %}   
-    <li><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> - 
-      {{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }} @ <a href="{{item.location_url}}">{{item.location_name}}</a><br />
+    <li><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> - {{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }}<br />
       {{item.content}}</li>
   {% endif %}
   </ul>
