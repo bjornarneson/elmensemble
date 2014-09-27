@@ -20,6 +20,11 @@ div.event h5 {
   font-weight: bold;
 }
 
+ul {
+  margin-bottom: 1em;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
