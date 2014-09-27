@@ -6,10 +6,17 @@ published: true
 
 <div class='listing col12 pad4h'>
 
+{% capture today %}{{site.time | date: '%s'}}{% endcapture %}
+{% capture eventday %}{{post.date | date: '%s'}}{% endcapture %}
+
+{% if postday > today %}   
 {% for item in site.events | sort: 'date' %}
-	<h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
+
+  <h2><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
 	<p>{{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }} @ <a href="{{item.location_url}}">{{item.location_name}}</a></p>
 	{{item.content}}
 {% endfor %}
+{% endif %}
+
 
 </div>
