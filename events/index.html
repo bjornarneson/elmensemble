@@ -8,34 +8,18 @@ published: true
 
   <h2>Upcoming Events</h2>
 {% for item in site.events | sort: 'date' %}
-
-  {% capture today %}{{site.time | date: '%s'}}{% endcapture %}
-  {% capture eventday %}{{item.date | date: '%s'}}{% endcapture %}
-
-  {% if eventday > today %}   
     <h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
 	<p>{{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }} @ <a href="{{item.location_url}}">{{item.location_name}}</a></p>
 	{{item.content}}
-  {% endif %}
-
 {% endfor %}
 
   
 <h2>Archived Events</h2>
-{% for item in site.events | sort: 'date' %}
-
-  {% capture today %}{{site.time | date: '%s'}}{% endcapture %}
-  {% capture eventday %}{{item.date | date: '%s'}}{% endcapture %}
+{% for item in site.events reversed | sort: 'date' %}
   <ul>
-  {% if eventday < today %}   
     <li><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> - {{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }}<br />
       {{item.content}}</li>
-  {% endif %}
   </ul>
 {% endfor %}
-  
-{{ today }}
-{{ eventday + 99 }}
-
   
 </div>
