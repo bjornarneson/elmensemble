@@ -12,6 +12,7 @@ location_url: "http://www.christchurchluth.org/map.html"
 On the third Sunday in Lent, we gather in a service of evening prayer to sing a timeless liturgy and hear a performance of Bach's Cantata 12, **Weinen, Klagen, Sorgen, Zagen**.
 
 Special guest musicians:
+
 - [Paul Westermeyer](http://www.paulwestermeyer.com/), guest conductor
 - [Clara Osowski](http://claraosowskimezzo.com/), alto
 - [Roy Heilman](http://royheilman.com/), tenor
