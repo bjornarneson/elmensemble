@@ -8,18 +8,23 @@ published: true
 
   <h2>Upcoming Events</h2>
 {% for item in site.events | sort: 'date' %}
+  {% if item.archived == false %}
     <h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
 	<p>{{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }} @ <a href="{{item.location_url}}">{{item.location_name}}</a></p>
 	{{item.content}}
+  {% endif %}
 {% endfor %}
 
-  
+<div id="event-archive">
 <h2>Archived Events</h2>
 {% for item in site.events reversed | sort: 'date' %}
   <ul>
+    {% if item.archived == true %}
     <li><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> - {{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }}<br />
       {{item.content}}</li>
+    {% endif %}
   </ul>
 {% endfor %}
-  
+</div>
+
 </div>
