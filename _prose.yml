@@ -22,6 +22,11 @@ prose:
           element: "text"
           label: "Date (yyyy-mm-dd hh:mm)"
           value: "2099-07-30 18:30"
+      - name: "archived"
+        field:
+          element: "checkbox"
+          label: "Archived"
+          value: false
       - name: "permalink"
         field:
           element: "text"
