@@ -20,15 +20,11 @@ section: events
     <h1>{{page.title}}</h1>
   </div>
 
-  <div class='prose'>
-    {{content}}
-  </div>
-
-  <div> 
+  <div class='col6'> 
     <h5>When:</h5>
     <p>{{page.date |  date:"%-I:%M %p, %A, %B %-d, %Y" }}</p>
   </div>
-  <div>
+  <div class='col6'>
   	<h5>Where:</h5>
         <p>
 	{{page.location_name}}<br />
@@ -36,5 +32,10 @@ section: events
 	<a href="{{page.location_url}}">MAP</a>
 	</p>
   </div>
+
+  <div class='prose'>
+    {{content}}
+  </div>
+
   
 </div>
