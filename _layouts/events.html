@@ -18,13 +18,14 @@ section: events
 <div class='listing col12 pad4h event'>
   <div class='heading'>
     <h1>{{page.title}}</h1>
+  </div>
 
-  <div class='col6'> 
+  <div class='col6 heading'> 
     <h5>When:</h5>
     <p>{{page.date |  date:"%-I:%M %p, %A, %B %-d, %Y" }}</p>
   </div>
   
-  <div class='col6'>
+  <div class='col6 heading'>
   	<h5>Where:</h5>
         <p>
 	{{page.location_name}} - <a href="{{page.location_url}}">MAP</a><br />
@@ -32,7 +33,6 @@ section: events
 	</p>
   </div>
 
-  </div>
 
   <div class='prose clearfix'>
     {{content}}
