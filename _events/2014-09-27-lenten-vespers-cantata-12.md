@@ -8,7 +8,7 @@ location_name: Christ Church Lutheran
 location_address: "3244 34th Ave S, Minneapolis, MN 55406"
 location_url: "http://www.christchurchluth.org/map.html"
 archived: false
-permalink: "lenten-vespers-cantata-12"
+permalink: ""
 ---
 
 On the third Sunday in Lent, we gather in a service of evening prayer to sing a timeless liturgy and hear a performance of Bach's Cantata 12, **Weinen, Klagen, Sorgen, Zagen**.
