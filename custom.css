@@ -28,6 +28,10 @@ ul li {
   list-style: disc;
 }
 
+div.menu ul li {
+  list-style: none;
+}
+
 
 img {
   max-width: 100%;
