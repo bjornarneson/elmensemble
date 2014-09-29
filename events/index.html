@@ -6,25 +6,24 @@ published: true
 
 <div class='listing col12 pad4h'>
 
-  <h2>Upcoming Events</h2>
-{% for item in site.events | sort: 'date' %}
-  {% if item.archived == false %}
-    <h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
+{% assign unarchived_events = site.events | where: "archived", false, | sort: "date" %}
+{% assign archived_events = site.events | where: "archived", true, | sort: "date" %}
+
+<h2>Upcoming Events</h2>
+  {% for item in unarchived_events %}
+  <h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
   <p><strong>{{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }}</strong> @ <a href="{{item.location_url}}">{{item.location_name}}</a></p>
-	{{item.content}}
-  {% endif %}
+  {{item.content}}
 {% endfor %}
 
 <div id="event-archive">
 <h2>Archived Events</h2>
-{% for item in site.events reversed | sort: 'date' %}
   <ul>
-    {% if item.archived == true %}
+  {% for item in archived_events reversed %}
     <li><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> - {{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }}<br />
       {{item.content}}</li>
-    {% endif %}
+  {% endfor %}
   </ul>
-{% endfor %}
 </div>
 
 </div>
