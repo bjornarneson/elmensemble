@@ -1,8 +1,8 @@
+{% assign unarchived_events = site.events | where: "archived", false, | sort: "date" %}
+
 <h2>Next Event</h2>
-{% for item in site.events | sort: 'date' %}
-{% if item.archived == false %}
-<h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h3>
-<p><strong>{{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }}</strong> @ <a href="{{item.location_url}}">{{item.location_name}}</a></p>
-{{item.content}}
-{% endif %}
+{% for item in unarchived_events limit:1 %}
+  <h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h3>
+  <p><strong>{{item.date | date:"%-I:%M %p, %A, %B %-d, %Y" }}</strong> @ <a href="{{item.location_url}}">{{item.location_name}}</a></p>
+  {{item.content}}
 {% endfor %}
