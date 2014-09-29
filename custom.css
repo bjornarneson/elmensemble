@@ -24,6 +24,10 @@ ul {
   margin-bottom: 1em;
 }
 
+ul li {
+  list-style: disc;
+}
+
 
 img {
   max-width: 100%;
