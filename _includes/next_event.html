@@ -1,6 +1,6 @@
 {% assign unarchived_events = site.events | where: "archived", false, | sort: "date" %}
 
-{% if unarchived_events %}
+{% if unarchived_events.size > 0 %}
   <h2>Next Event</h2>
     {% for item in unarchived_events limit:1 %}
     <h3><a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h3>
